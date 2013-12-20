@@ -1,0 +1,16 @@
+{
+  "chef": {
+    "chef_server_url": "https://api.opscode.com/organizations/svk-org",
+    "validation_client_name": "svk-org-validator",
+    "validation_key_path": ".chef/svk-org-validator.pem",
+    "client_key": ".chef/sergyy78.pem",
+    "node_name": "sergyy78"
+  },
+  "vagrant": {
+    "vm": {
+      "box": "opscode-ubuntu-12.04-i386",
+      "box_url": "https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04-i386_provisionerless.box",
+      "provision": "chef_client"
+    }
+  }
+}
